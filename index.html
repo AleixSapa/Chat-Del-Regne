@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Xat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-section">
+        <h1>Benvingut!</h1>
+        <button id="register-btn">Registrar-se</button>
+        <button id="login-btn">Iniciar sessió</button>
+    </div>
+
+    <div id="register-section" style="display: none;">
+        <h1>Registra't</h1>
+        <form id="register-form">
+            <input type="text" id="register-name" placeholder="Nom" required>
+            <input type="email" id="register-email" placeholder="E-mail" required>
+            <input type="password" id="register-password" placeholder="Contrasenya" required>
+            <button type="submit">Registrar</button>
+            <button type="button" id="back-to-start">Tornar enrere</button>
+        </form>
+    </div>
+
+    <div id="login-section" style="display: none;">
+        <h1>Inicia sessió</h1>
+        <form id="login-form">
+            <input type="text" id="login-name" placeholder="Nom" required>
+            <input type="password" id="login-password" placeholder="Contrasenya" required>
+            <button type="submit">Iniciar sessió</button>
+            <button type="button" id="back-to-start-login">Tornar enrere</button>
+        </form>
+    </div>
+
+    <div id="chat-section" style="display: none;">
+        <h1>Xat</h1>
+        <div id="messages"></div>
+        <input type="text" id="message-input" placeholder="Escriu un missatge..." />
+        <button id="send-message">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
